@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Site - Home</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .hero { height: 200px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .lazy-content { margin-top: 1500px; padding: 20px; background: #e0e0e0; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to SiteScope Test Site</h1>
+    <nav>
+        <a href="/">Home</a> | 
+        <a href="/about.html">About</a> | 
+        <a href="/missing.html">Broken Link</a> |
+        <a href="/contact">Redirect (Mock)</a>
+    </nav>
+    <div class="hero">
+        <img src="https://via.placeholder.com/800x200" alt="Hero Image">
+    </div>
+    <p>This is a test site for SiteScope.</p>
+    <img src="non-existent.png" alt="Broken Image">
+    <button></button> <!-- Empty button warning -->
+    <a href="#"></a> <!-- Empty link warning -->
+
+    <div class="lazy-content">
+        <h2>I was lazy loaded!</h2>
+        <p>You had to scroll to see me.</p>
+    </div>
+
+    <script>
+        console.error("This is a simulated console error for testing.");
+    </script>
+</body>
+</html>
